@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Form, Button, ButtonGroup } from "react-bootstrap";
-import { signInWithGoogle } from "../../Firebase/firebase.utils.js";
+// import { signInWithGoogle } from "../../Firebase/firebase.utils.js";
 
 const SignIn = () => {
   const [form, setForm] = useState({
@@ -56,7 +56,7 @@ const SignIn = () => {
             Sign In
           </Button>
           <Button
-            onClick={signInWithGoogle}
+            // onClick={signInWithGoogle}
             className='button'
             id='google-button'
             variant='outline-light'
