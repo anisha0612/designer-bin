@@ -1,9 +1,9 @@
 import React, { useState } from "react";
 import { Button, Form } from "react-bootstrap";
-import {
-  auth,
-  createUserProfileDocument,
-} from "../../Firebase/firebase.utils.js";
+// import {
+//   auth,
+//   createUserProfileDocument,
+// } from "../../Firebase/firebase.utils.js";
 
 const SignUp = () => {
   const [form, setForm] = useState({
@@ -23,13 +23,13 @@ const SignUp = () => {
       console.log("passwords don't match");
       return;
     }
-    auth
-      .signInWithEmailAndPassword(email, password)
-      .then((result) => {
-        console.log(result);
-        setForm({});
-      })
-      .catch((error) => console.log(error));
+    // auth
+    //   .signInWithEmailAndPassword(email, password)
+    //   .then((result) => {
+    //     console.log(result);
+    //     setForm({});
+    //   })
+    //   .catch((error) => console.log(error));
     // try {
     // const { user } = await auth.createUserWithEmailAndPassword(
     //   email,

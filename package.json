@@ -1,0 +1,22 @@
+{
+  "name": "designer-bin",
+  "version": "1.0.0",
+  "description": "Designer Bin MERN Stack App",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/anisha0612/designer-bin.git"
+  },
+  "author": "Anisha P",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/anisha0612/designer-bin/issues"
+  },
+  "homepage": "https://github.com/anisha0612/designer-bin#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
