@@ -1,0 +1,25 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    margin: 2em;
+}
+
+.logo-container {
+    width: 2rem;
+    height: 2rem;
+    margin-left: 1em;
+}
+
+.link {
+    padding: 2em;
+    font-weight: 700;
+    font-size: 1.3rem;
+    cursor: pointer;
+}
+.link:hover{
+    font-weight: 800;
+    cursor: pointer;
+    color: #b1922d;
+}
+
+

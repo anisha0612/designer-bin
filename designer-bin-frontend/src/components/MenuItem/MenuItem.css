@@ -1,0 +1,18 @@
+
+.card:hover {
+    cursor: pointer;
+    animation: stretch 2s ease-out;
+}
+
+@media screen and (min-width: 767px) and (max-width: 992px) {
+    .MenuItem:last-child{
+        margin-left: 25%;
+    }
+}
+
+/* Animation for card */
+@keyframes stretch {
+    100% {
+        transform: scale(1.05);
+    }
+}

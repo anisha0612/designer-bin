@@ -1,0 +1,15 @@
+.ShopPage {
+    margin: 2rem;
+}
+
+.ShopPage-title {
+    margin-left: 0.5rem;
+    padding: 1rem 0 0;
+    font-size: 3em;
+}
+
+.preview .collection-preview-title {
+    margin: 2rem 1rem;
+    font-weight: 200;
+    font-size: 2em;
+}
