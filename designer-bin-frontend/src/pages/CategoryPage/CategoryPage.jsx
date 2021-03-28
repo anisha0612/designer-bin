@@ -1,21 +1,25 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import ProductsCategory from "../../components/ProductsCategory/ProductsCategory.jsx";
-import shopData from "../ShopPage/ShopData";
+import axios from "axios";
 
 const CategoryPage = ({ match }) => {
-  const products = shopData.find(
-    (category) => category.title.toLowerCase() === match.params.category
-  ).items;
-  const titleExtract = shopData.find(
-    (category) => category.title.toLowerCase() === match.params.category
-  ).title;
+  const [shopData, setShopData] = useState([]);
 
-  const title = `${
-    titleExtract[0].toUpperCase() + titleExtract.substring(1).toLowerCase()
-  } Wear`;
+  useEffect(() => {
+    const fetchData = async () => {
+      const { data } = await axios.get(`/${match.params.category}`);
+      setShopData(data);
+    };
+
+    fetchData();
+  }, [match.params.category]);
+
+  const products = shopData.items;
+  const title = shopData.title;
+
   return (
     <div>
-      <ProductsCategory title={title} items={products} />
+      <ProductsCategory items={products} title={title} />
     </div>
   );
 };

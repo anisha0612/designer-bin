@@ -5,11 +5,15 @@ import ProductItem from "../ProductItem/ProductItem.jsx";
 const ProductsCategory = ({ items, title }) => {
   return (
     <div>
-      <h1 className='text-center'>{title}</h1>
+      <h2 className='text-center my-5'>{title}</h2>
       <Row>
-        {items.map((item) => (
-          <ProductItem key={item.id} {...item} title={title} />
-        ))}
+        {items ? (
+          items.map((item) => (
+            <ProductItem key={item.id} {...item} title={title} />
+          ))
+        ) : (
+          <h2>Loading ...</h2>
+        )}
       </Row>
     </div>
   );

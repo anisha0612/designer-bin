@@ -11,20 +11,16 @@ app.get("/", (req, res) => {
 
 //  get items based on category
 
-
-app.get("/api/:category", (req, res) => {
-
+app.get("/:category", (req, res) => {
   const category = shopData.find(
     (obj) => obj.title.toLowerCase() === req.params.category.toLowerCase()
   );
-  res.json(category.items);
+  res.json(category);
 });
 
 // get a single item based on id from each category
 
-
-app.get("/api/:category/:id", (req, res) => {
-
+app.get("/:category/:id", (req, res) => {
   const categoryItems = shopData.find(
     (category) => category.title.toLowerCase() === req.params.category
   ).items;
