@@ -5,10 +5,12 @@ import { Link } from "react-router-dom";
 const ProductItem = ({ name, imageUrl, title, price, id, ...others }) => {
   return (
     <Col sm={12} md={6} lg={4} xl={3}>
+
       <Link
         to={`${title.split(" ")[0].toLowerCase()}/${id}`}
         className='product-item'>
         <Card className='card m-3' border='light'>
+
           <Card.Img variant='top' src={imageUrl} />
           <Card.Body>
             <Card.Title>{name}</Card.Title>

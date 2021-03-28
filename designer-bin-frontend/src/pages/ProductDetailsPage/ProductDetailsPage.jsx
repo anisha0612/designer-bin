@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+
 import { Row, Col, Image, ListGroup, Button, Card } from "react-bootstrap";
 import shopData from "../ShopPage/ShopData";
 
@@ -41,6 +42,7 @@ const ProductDetailsPage = ({ match }) => {
       </Row>
     </div>
   );
+
 };
 
 export default ProductDetailsPage;
