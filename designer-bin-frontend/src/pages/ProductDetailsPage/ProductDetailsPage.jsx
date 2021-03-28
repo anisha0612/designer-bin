@@ -1,6 +1,8 @@
 import React from "react";
 import { Link } from "react-router-dom";
+
 import { Row, Col, Image, Button } from "react-bootstrap";
+
 import shopData from "../ShopPage/ShopData";
 import Rating from "../../components/Rating/Rating.jsx";
 
