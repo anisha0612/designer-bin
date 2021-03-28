@@ -47,8 +47,15 @@ label {
 
 }
 
+.button-cart:disabled{
+  color:rgb(177,146,45);
+}
+
+.button-cart:disabled:hover{
+  color: rgb(255,255,255);
+}
 .product-details{
-  color:rgba(0,0,0,0.7);
+  color:rgba(44, 43, 43, 0.7);
 }
 .product-item:hover{
 color: #b1922d;
