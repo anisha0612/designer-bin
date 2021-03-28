@@ -10,7 +10,8 @@ const SHOP_DATA = [
         imageUrl:
           "https://images.unsplash.com/photo-1567189022371-cc754891cdc9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60",
         price: 50,
-        noOfItems: { XS: 10, S: 10, M: 10, L: 10 },
+        noOfItems: 0,
+        // noOfItems: { XS: 10, S: 10, M: 10, L: 10 },
         rating: 4.5,
       },
       {
@@ -19,7 +20,9 @@ const SHOP_DATA = [
         imageUrl:
           "https://images.unsplash.com/photo-1550928431-ee0ec6db30d3?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60",
         price: 80,
-        noOfItems: { XS: 10, S: 10, M: 10, L: 10 },
+        // noOfItems: { XS: 10, S: 10, M: 10, L: 10 },
+        // noOfItems: 10,
+        noOfItems: 10,
         rating: 4,
       },
       {
@@ -28,7 +31,9 @@ const SHOP_DATA = [
         imageUrl:
           "https://images.unsplash.com/photo-1527692013692-dd97db1f9a2f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60",
         price: 100,
-        noOfItems: { XS: 10, S: 10, M: 10, L: 10 },
+        // noOfItems: { XS: 10, S: 10, M: 10, L: 10 },
+        // noOfItems: 10,
+        noOfItems: 10,
         rating: 4.8,
       },
       {
@@ -37,7 +42,9 @@ const SHOP_DATA = [
         imageUrl:
           "https://images.unsplash.com/photo-1528812969535-4bcefc071532?ixid=MXwxMjA3fDB8MHxzZWFyY2h8Mzh8fHdvbWVuJTIwZHJlc3N8ZW58MHx8MHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60",
         price: 60,
-        noOfItems: { XS: 10, S: 10, M: 10, L: 10 },
+        // noOfItems: { XS: 10, S: 10, M: 10, L: 10 },
+        // noOfItems: 10,
+        noOfItems: 10,
         rating: 3.5,
       },
       {
@@ -46,8 +53,10 @@ const SHOP_DATA = [
         imageUrl:
           "https://images.unsplash.com/photo-1572804013854-26c537be296e?ixid=MXwxMjA3fDB8MHxzZWFyY2h8NDV8fHdvbWVuJTIwZHJlc3N8ZW58MHx8MHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60",
         price: 80,
-        noOfItems: { XS: 10, S: 10, M: 10, L: 10 },
-        rating: 3.5,
+        // noOfItems: { XS: 10, S: 10, M: 10, L: 10 },
+        // noOfItems: 10,
+        noOfItems: 10,
+        rating: 4.5,
       },
       {
         id: 6,
@@ -55,7 +64,9 @@ const SHOP_DATA = [
         imageUrl:
           "https://images.unsplash.com/photo-1593380090147-a2192b72a9ae?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60",
         price: 75,
-        noOfItems: { XS: 10, S: 10, M: 10, L: 10 },
+        // noOfItems: { XS: 10, S: 10, M: 10, L: 10 },
+        // noOfItems: 10,
+        noOfItems: 10,
         rating: 5,
       },
       {
@@ -64,8 +75,10 @@ const SHOP_DATA = [
         imageUrl:
           "https://images.unsplash.com/photo-1593502738690-6a5799263961?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60",
         price: 90,
-        noOfItems: { XS: 10, S: 10, M: 10, L: 10 },
-        rating: 3,
+        // noOfItems: { XS: 10, S: 10, M: 10, L: 10 },
+        // noOfItems: 10,
+        noOfItems: 10,
+        rating: 4,
       },
     ],
   },
@@ -80,7 +93,8 @@ const SHOP_DATA = [
         imageUrl:
           "https://images.unsplash.com/flagged/photo-1552708068-ddef64d75aee?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60",
         price: 325,
-        noOfItems: { XS: 10, S: 10, M: 10, L: 10 },
+        // noOfItems: { XS: 10, S: 10, M: 10, L: 10 },
+        noOfItems: 10,
         rating: 4.0,
       },
       {
@@ -89,7 +103,8 @@ const SHOP_DATA = [
         imageUrl:
           "https://images.unsplash.com/flagged/photo-1575924795232-1893dbca02f4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60",
         price: 30,
-        noOfItems: { XS: 10, S: 10, M: 10, L: 10 },
+        // noOfItems: { XS: 10, S: 10, M: 10, L: 10 },
+        noOfItems: 10,
         rating: 4.0,
       },
       {
@@ -98,7 +113,8 @@ const SHOP_DATA = [
         imageUrl:
           "https://images.unsplash.com/photo-1585518126763-5146ad8837a0?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60",
         price: 55,
-        noOfItems: { XS: 10, S: 10, M: 10, L: 10 },
+        // noOfItems: { XS: 10, S: 10, M: 10, L: 10 },
+        noOfItems: 10,
         rating: 4.5,
       },
       {
@@ -107,7 +123,8 @@ const SHOP_DATA = [
         imageUrl:
           "https://images.unsplash.com/photo-1552252059-9d77e4059ad1?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60",
         price: 70,
-        noOfItems: { XS: 10, S: 10, M: 10, L: 10 },
+        // noOfItems: { XS: 10, S: 10, M: 10, L: 10 },
+        noOfItems: 10,
         rating: 3.5,
       },
       {
@@ -116,8 +133,9 @@ const SHOP_DATA = [
         imageUrl:
           "https://images.unsplash.com/photo-1523452617300-93ebbf63ed61?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60",
         price: 100,
-        noOfItems: { XS: 10, S: 10, M: 10, L: 10 },
-        rating: 3.5,
+        // noOfItems: { XS: 10, S: 10, M: 10, L: 10 },
+        noOfItems: 10,
+        rating: 4.5,
       },
       {
         id: 6,
@@ -125,8 +143,9 @@ const SHOP_DATA = [
         imageUrl:
           "https://images.unsplash.com/photo-1512353087810-25dfcd100962?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60",
         price: 150,
-        noOfItems: { XS: 10, S: 10, M: 10, L: 10 },
-        rating: 3,
+        // noOfItems: { XS: 10, S: 10, M: 10, L: 10 },
+        noOfItems: 10,
+        rating: 4,
       },
     ],
   },
@@ -141,7 +160,8 @@ const SHOP_DATA = [
         imageUrl:
           "https://images.unsplash.com/photo-1520413624224-91d4554286bb?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MzF8fGNsb3RoZXMlMjBraWRzfGVufDB8fDB8&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60",
         price: 80,
-        noOfItems: { "2T": 10, "3T": 10, "4T": 10, "5T": 10 },
+        // noOfItems: { "2T": 10, "3T": 10, "4T": 10, "5T": 10 },
+        noOfItems: 10,
         rating: 4.5,
       },
       {
@@ -150,7 +170,8 @@ const SHOP_DATA = [
         imageUrl:
           "https://images.unsplash.com/photo-1487033858121-f6f74a05c1de?ixid=MXwxMjA3fDB8MHxzZWFyY2h8Mjd8fGNsb3RoZXMlMjBraWRzfGVufDB8fDB8&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60",
         price: 50,
-        noOfItems: { "2T": 10, "3T": 10, "4T": 10, "5T": 10 },
+        // noOfItems: { "2T": 10, "3T": 10, "4T": 10, "5T": 10 },
+        noOfItems: 10,
         rating: 4.0,
       },
       {
@@ -159,8 +180,9 @@ const SHOP_DATA = [
         imageUrl:
           "https://images.unsplash.com/photo-1502451885777-16c98b07834a?ixid=MXwxMjA3fDB8MHxzZWFyY2h8Mjh8fGtpZHMlMjBjbG90aGVzfGVufDB8fDB8&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60",
         price: 60,
-        noOfItems: { "2T": 10, "3T": 10, "4T": 10, "5T": 10 },
-        rating: 3.5,
+        // noOfItems: { "2T": 10, "3T": 10, "4T": 10, "5T": 10 },
+        noOfItems: 10,
+        rating: 4.5,
       },
       {
         id: 4,
@@ -168,7 +190,8 @@ const SHOP_DATA = [
         imageUrl:
           "https://images.unsplash.com/photo-1584270845191-5b392bf08e69?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MTJ8fGNsb3RoZXMlMjB0b2RkbGVyfGVufDB8fDB8&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60",
         price: 35,
-        noOfItems: { "2T": 10, "3T": 10, "4T": 10, "5T": 10 },
+        // noOfItems: { "2T": 10, "3T": 10, "4T": 10, "5T": 10 },
+        noOfItems: 10,
         rating: 3.5,
       },
       {
@@ -177,7 +200,8 @@ const SHOP_DATA = [
         imageUrl:
           "https://images.unsplash.com/photo-1541580620-23a640b30338?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MTl8fGtpZCUyMGNsb3RoZXN8ZW58MHx8MHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60",
         price: 30,
-        noOfItems: { "2T": 10, "3T": 10, "4T": 10, "5T": 10 },
+        // noOfItems: { "2T": 10, "3T": 10, "4T": 10, "5T": 10 },
+        noOfItems: 10,
         rating: 4,
       },
 
@@ -187,8 +211,9 @@ const SHOP_DATA = [
         imageUrl:
           "https://images.unsplash.com/photo-1568347798848-276915a45da6?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MTF8fGJhYnklMjBkcmVzc3xlbnwwfHwwfA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60",
         price: 45,
-        noOfItems: { "2T": 10, "3T": 10, "4T": 10, "5T": 10 },
-        rating: 3,
+        // noOfItems: { "2T": 10, "3T": 10, "4T": 10, "5T": 10 },
+        noOfItems: 10,
+        rating: 4,
       },
     ],
   },
