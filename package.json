@@ -4,8 +4,10 @@
   "description": "Designer Bin MERN Stack App",
   "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node backend/server"
   },
+  "type": "module",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/anisha0612/designer-bin.git"
@@ -17,6 +19,8 @@
   },
   "homepage": "https://github.com/anisha0612/designer-bin#readme",
   "dependencies": {
-    "express": "^4.17.1"
+    "axios": "^0.21.1",
+    "express": "^4.17.1",
+    "nodemon": "^2.0.7"
   }
 }

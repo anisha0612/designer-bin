@@ -1,8 +1,9 @@
 import React from "react";
 import { Card, Col } from "react-bootstrap";
+
 // import "./CollectionItem.css";
 
-const CollectionItem = ({ name, imageUrl, price }) => {
+const CollectionItem = ({ name, imageUrl, price, ...otherItems }) => {
   return (
     <Col sm={12} md={6} lg={4} xl={3}>
       <Card className='card m-3'>
