@@ -12,9 +12,9 @@ const Directory = () => {
     },
     {
       id: 2,
-      title: "Men",
+      title: "Mens",
       imgSrc: `https://images.unsplash.com/photo-1550246140-18d9dd4a6438?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MjR8fG1lbiUyMGNsb3RoZXMlMjBtb2RlbHxlbnwwfHwwfA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60`,
-      linkUrl: "men",
+      linkUrl: "mens",
     },
     {
       id: 3,

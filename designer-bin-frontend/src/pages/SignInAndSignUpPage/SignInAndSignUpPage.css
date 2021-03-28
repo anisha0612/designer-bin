@@ -26,19 +26,21 @@ outline: none !important;
   box-shadow: 0 0.5px 0 0 #b1922d !important;
 }
 .button {
- text-decoration: none;
+ /* text-decoration: none;
   color: #fff;
   text-align: center;
   outline: 0;
   border: none;
   border-radius: 5px;
   line-height: 1.5em;
-  padding: 1em; 
+  padding: 1em;  */
+   color: #b1922d;
   text-transform: uppercase; 
 }
 
 .button:hover,.button:focus,.button:active{
-    color: #fff;
+   background-color: #b1922d;
+   color: #fff;
     font-weight: 700;
 }
 
