@@ -1,21 +1,28 @@
 import React from "react";
 import { Card, Col } from "react-bootstrap";
-import { Link } from "react-router-dom";
 
-const ProductItem = ({ name, imageUrl, title, price, id, ...others }) => {
+import { withRouter } from "react-router-dom";
+
+// * @desc Component is a part of Category page which
+// *  get items from Product Category Component and display each Item
+
+const ProductItem = ({ _id, match, history, ...others }) => {
   return (
     <Col sm={12} md={6} lg={4} xl={3}>
-      <Link to={`${title}/${id}`} className='product-item'>
-        <Card className='card m-3' border='light'>
-          <Card.Img variant='top' src={imageUrl} />
-          <Card.Body>
-            <Card.Title>{name}</Card.Title>
-            <Card.Text>${price}</Card.Text>
-          </Card.Body>
-        </Card>
-      </Link>
+      {/* <Link to={`${others.category}/${id}`} className='product-item'> */}
+      <Card
+        className='card m-3'
+        border='light'
+        onClick={() => history.push(`${match.url}/${_id}`)}>
+        <Card.Img variant='top' src={others.imageUrl} />
+        <Card.Body>
+          <Card.Title>{others.name}</Card.Title>
+          <Card.Text>${others.price}</Card.Text>
+        </Card.Body>
+      </Card>
+      {/* </Link> */}
     </Col>
   );
 };
 
-export default ProductItem;
+export default withRouter(ProductItem);

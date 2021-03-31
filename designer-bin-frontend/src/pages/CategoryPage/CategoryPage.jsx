@@ -7,19 +7,19 @@ const CategoryPage = ({ match }) => {
 
   useEffect(() => {
     const fetchData = async () => {
-      const { data } = await axios.get(`/${match.params.category}`);
+      const { data } = await axios.get(`/api/${match.params.category}`);
+      // console.log(data);
       setShopData(data);
     };
 
     fetchData();
-  }, [match.params.category]);
+  }, [match]);
 
-  const products = shopData.items;
-  const title = shopData.title;
+  // const title = shopData.title;
 
   return (
     <div>
-      <ProductsCategory items={products} title={title} />
+      <ProductsCategory items={shopData} />
     </div>
   );
 };

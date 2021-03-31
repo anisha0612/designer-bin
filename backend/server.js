@@ -1,5 +1,12 @@
 import express from "express";
-import shopData from "./data/shopData.js";
+import dotenv from "dotenv";
+import connectDB from "./config/db.js";
+// import shopData from "./data/shopData.js";
+import productRoute from "./routes/productsRoute.js";
+
+dotenv.config();
+
+connectDB();
 
 const app = express();
 
@@ -9,23 +16,11 @@ app.get("/", (req, res) => {
   res.send("API is running...");
 });
 
-//  get items based on category
+app.use("/api", productRoute);
 
-app.get("/:category", (req, res) => {
-  const category = shopData.find(
-    (obj) => obj.title.toLowerCase() === req.params.category.toLowerCase()
-  );
-  res.json(category);
-});
+const PORT = process.env.PORT || 5000;
 
-// get a single item based on id from each category
-
-app.get("/:category/:id", (req, res) => {
-  const categoryItems = shopData.find(
-    (category) => category.title.toLowerCase() === req.params.category
-  ).items;
-  const product = categoryItems.find((item) => item.id == req.params.id);
-  res.json(product);
-});
-
-app.listen(5000, console.log("Server running on port 5000"));
+app.listen(
+  PORT,
+  console.log(`Server running  ${process.env.NODE_ENV} mode on port ${PORT}`)
+);

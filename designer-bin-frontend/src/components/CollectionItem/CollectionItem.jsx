@@ -1,20 +1,25 @@
 import React from "react";
 import { Card, Col } from "react-bootstrap";
+import { withRouter } from "react-router-dom";
 
 // import "./CollectionItem.css";
 
-const CollectionItem = ({ name, imageUrl, price, ...otherItems }) => {
+const CollectionItem = ({ id, match, history, ...otherItems }) => {
   return (
     <Col sm={12} md={6} lg={4} xl={3}>
-      <Card className='card m-3'>
-        <Card.Img variant='top' src={imageUrl} />
+      {/* <Link to={`${otherItems.category}/${id}`} className='product-item'> */}{" "}
+      <Card
+        className='card m-3'
+        onClick={() => history.push(`${match.url}/${id}`)}>
+        <Card.Img variant='top' src={otherItems.imageUrl} />
         <Card.Body>
-          <Card.Title>{name}</Card.Title>
-          <Card.Text>${price}</Card.Text>
+          <Card.Title>{otherItems.name}</Card.Title>
+          <Card.Text>${otherItems.price}</Card.Text>
         </Card.Body>
       </Card>
+      {/* </Link> */}
     </Col>
   );
 };
 
-export default CollectionItem;
+export default withRouter(CollectionItem);

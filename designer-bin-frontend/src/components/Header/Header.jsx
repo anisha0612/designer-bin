@@ -1,8 +1,9 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { ReactComponent as Logo } from "../../assets/shop.svg";
-// import { auth } from "../../Firebase/firebase.utils.js";
 import "./Header.css";
+
+// * @desc HEADER Component is the Navigation for the Web App
 
 const Header = ({ currentUser }) => {
   return (
@@ -16,18 +17,20 @@ const Header = ({ currentUser }) => {
         <Link to='/shop' className='link'>
           SHOP
         </Link>
-        <Link to='/contact' className='link'>
-          CONTACT
-        </Link>
+
         {/* {currentUser ? (
           <span className='link' onClick={() => auth.signOut()}>
             SIGN OUT
           </span>
         ) : ( */}
         <Link to='/signin' className='link'>
-          SIGN IN
+          <i className='fas fa-user'></i> SIGN IN
         </Link>
         {/* )} */}
+
+        <Link to='/cart' className='link'>
+          <i className='fas fa-shopping-cart'></i> CART
+        </Link>
       </div>
     </div>
   );
